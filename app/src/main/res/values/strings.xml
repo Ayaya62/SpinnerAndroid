@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">pertemuan_20 September</string>
+    <array name="countries">
+        <item>Indonesia</item>
+        <item>China</item>
+        <item>Korea</item>
+        <item>Japanese</item>
+        <item>France</item>
+    </array>
+</resources>

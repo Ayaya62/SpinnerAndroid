@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.example.pertemuan_20september.app-mergeDebugResources-28:/layout/activity_main.xml",
+        "source": "com.example.pertemuan_20september.app-main-31:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\7.4\\com.example.pertemuan_20september.app-mergeDebugResources-28:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\7.4\\com.example.pertemuan_20september.app-main-31:\\layout\\activity_main.xml"
+    }
+]
