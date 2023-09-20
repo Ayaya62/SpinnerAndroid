@@ -2902,6 +2902,8 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_show_calendar
+id btn_show_time_picker
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2941,6 +2943,7 @@ id currentState
 id custom
 id customPanel
 id cut
+id datePicker
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3260,6 +3263,7 @@ id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
 id time
+id timePickerView
 id title
 id titleDividerNoCustom
 id title_template

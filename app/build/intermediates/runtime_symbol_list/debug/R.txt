@@ -2901,6 +2901,8 @@ int id bounce 0x7f08005e
 int id bounceBoth 0x7f08005f
 int id bounceEnd 0x7f080060
 int id bounceStart 0x7f080061
+int id btn_show_calendar 0x7f0801f0
+int id btn_show_time_picker 0x7f0801f1
 int id buttonPanel 0x7f080062
 int id cache_measures 0x7f080063
 int id callMeasure 0x7f080064
@@ -2940,6 +2942,7 @@ int id currentState 0x7f080085
 int id custom 0x7f080086
 int id customPanel 0x7f080087
 int id cut 0x7f080088
+int id datePicker 0x7f0801ee
 int id date_picker_actions 0x7f080089
 int id decelerate 0x7f08008a
 int id decelerateAndComplete 0x7f08008b
@@ -3259,6 +3262,7 @@ int id textinput_placeholder 0x7f0801c3
 int id textinput_prefix_text 0x7f0801c4
 int id textinput_suffix_text 0x7f0801c5
 int id time 0x7f0801c6
+int id timePickerView 0x7f0801ef
 int id title 0x7f0801c7
 int id titleDividerNoCustom 0x7f0801c8
 int id title_template 0x7f0801c9

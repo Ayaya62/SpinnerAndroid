@@ -4,8 +4,11 @@ package com.example.pertemuan_20september.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
+import android.widget.TimePicker;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -20,16 +23,34 @@ public final class ActivityMainBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final Button btnShowCalendar;
+
+  @NonNull
+  public final Button btnShowTimePicker;
+
+  @NonNull
+  public final DatePicker datePicker;
+
+  @NonNull
   public final Spinner spinnerCountries;
 
   @NonNull
   public final Spinner spinnerProvinsi;
 
-  private ActivityMainBinding(@NonNull LinearLayout rootView, @NonNull Spinner spinnerCountries,
-      @NonNull Spinner spinnerProvinsi) {
+  @NonNull
+  public final TimePicker timePickerView;
+
+  private ActivityMainBinding(@NonNull LinearLayout rootView, @NonNull Button btnShowCalendar,
+      @NonNull Button btnShowTimePicker, @NonNull DatePicker datePicker,
+      @NonNull Spinner spinnerCountries, @NonNull Spinner spinnerProvinsi,
+      @NonNull TimePicker timePickerView) {
     this.rootView = rootView;
+    this.btnShowCalendar = btnShowCalendar;
+    this.btnShowTimePicker = btnShowTimePicker;
+    this.datePicker = datePicker;
     this.spinnerCountries = spinnerCountries;
     this.spinnerProvinsi = spinnerProvinsi;
+    this.timePickerView = timePickerView;
   }
 
   @Override
@@ -59,6 +80,24 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_show_calendar;
+      Button btnShowCalendar = ViewBindings.findChildViewById(rootView, id);
+      if (btnShowCalendar == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_show_time_picker;
+      Button btnShowTimePicker = ViewBindings.findChildViewById(rootView, id);
+      if (btnShowTimePicker == null) {
+        break missingId;
+      }
+
+      id = R.id.datePicker;
+      DatePicker datePicker = ViewBindings.findChildViewById(rootView, id);
+      if (datePicker == null) {
+        break missingId;
+      }
+
       id = R.id.spinnerCountries;
       Spinner spinnerCountries = ViewBindings.findChildViewById(rootView, id);
       if (spinnerCountries == null) {
@@ -71,7 +110,14 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((LinearLayout) rootView, spinnerCountries, spinnerProvinsi);
+      id = R.id.timePickerView;
+      TimePicker timePickerView = ViewBindings.findChildViewById(rootView, id);
+      if (timePickerView == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((LinearLayout) rootView, btnShowCalendar, btnShowTimePicker,
+          datePicker, spinnerCountries, spinnerProvinsi, timePickerView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

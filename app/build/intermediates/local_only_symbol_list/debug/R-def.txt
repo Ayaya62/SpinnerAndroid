@@ -10,8 +10,12 @@ color teal_700
 color white
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+id btn_show_calendar
+id btn_show_time_picker
+id datePicker
 id spinnerCountries
 id spinnerProvinsi
+id timePickerView
 layout activity_main
 mipmap ic_launcher
 mipmap ic_launcher_round
